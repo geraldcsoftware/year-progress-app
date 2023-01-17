@@ -7,7 +7,7 @@ import { endOfYear, startOfYear, differenceInCalendarDays } from "date-fns";
   styles: [],
 })
 export class YearProgressPage implements OnInit {
-  date: Date = new Date();
+  date: Date = new Date(Date.now());
   year = this.date.getFullYear();
 
   daysInYear = 0;
